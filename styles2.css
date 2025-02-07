@@ -1,0 +1,553 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0d1a;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* For smooth scrolling */
+html{
+    scroll-behavior : smooth;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #18142c;
+    position: relative;  
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #7d5ff5;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    transform: translateY(-5px);
+}
+.nav-links a:hover {
+    color: #8b5cf6;
+    transform: translateY(-5px);
+}
+
+/* Mobile View */
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+    position: absolute;
+    right: 30px;  /* Aligns menu to the right */
+    top: 50%;  
+    transform: translateY(-50%); /* Centers it vertically */
+    
+}
+
+    
+ /* Responsive Menu */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #18142c;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+.contact-btn {
+    background: #7d5ff5;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: #7d5ff5;
+}
+
+
+.badge {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+    
+
+.badge:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+/* .cta-btn, .premium-btn {
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
+.cta-btn {
+    background-color: #9891ff;
+  border-radius: 100px;
+  box-shadow: rgba(118, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.cta-btn:hover {
+    box-shadow: rgba(118, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(118, 44, 187, 0.20.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(4118, 44, 187, 0.2) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+
+/* Thumbnail Showcase */
+.thumbnail-showcase {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.thumbnail-showcase img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.psd-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: blue;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #7d5ff5;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h2 {
+    color: #7d5ff5;
+    font-size: 30px;
+}
+
+.stats h2:hover {
+    color: gold;
+    transform: translateY(-5px);
+}
+
+.stats p {
+    font-weight: 500;
+}
+/* 🔥🔥 RESPONSIVE DESIGN 🔥🔥 */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btn, .premium-btn {
+        width: 80%;
+        margin: 5px;
+    }
+
+    .thumbnail-showcase img {
+        width: 95%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-item h2 {
+        font-size: 24px;
+    }
+}
+/* Global Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d26;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} */
+
+/* Portfolio Section */
+.portfolio {
+    padding: 40px 20px;
+}
+
+/* Buttons */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: #4c4c80;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #7a5cff;
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: rgba(118, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(118, 44, 187, 0.20.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(4118, 44, 187, 0.2) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+}
+
+/* Thumbnails Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.thumbnail {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-buttons {
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: start;
+        padding: 10px;
+    }
+
+    .filter-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Customer Review  */
+
+
+/* Reviews Section */
+.reviews {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* Reviews Container */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Review Cards */
+.review-card {
+    background: #1E1B40;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+
+/* Reviewer Section */
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.reviewer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* border: 1px solid gold; */
+}
+
+.reviewer h4 {
+    margin: 0;
+    font-size: 1rem;
+    
+}
+
+.reviewer span {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* FAQ STYLING */
+
+* FAQ Section Container */
+.faq-container {
+    width: 90%;
+    max-width: 600px;
+    background: #1a1a40;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* FAQ Title */
+.faq-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* FAQ Items */
+.faq-item {
+    background: #26264f;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* FAQ Question */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 10;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #32325d;
+}
+
+/* Plus Icon */
+.faq-question span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon when active */
+.faq-item.active .faq-question span {
+    transform: rotate(45deg);
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+    padding: 15px;
+    font-size: 16px;
+    font: weight 500px;;
+    text-align: left;
+    line-height: 1.5;
+    background: #32325d;
+}
+
+/* Show answer when active */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .faq-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
