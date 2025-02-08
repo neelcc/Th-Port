@@ -192,25 +192,7 @@ html{
     border-radius: 15px;
 }
 
-.psd-tag {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: blue;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-}
 
-.price-tag {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: #7d5ff5;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-}
 
 /* Stats */
 .stats {
@@ -387,7 +369,7 @@ html{
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ccc;
     margin-bottom: 30px;
 }
@@ -466,11 +448,12 @@ html{
 
 /* FAQ STYLING */
 
-* FAQ Section Container */
+/* FAQ Section Container */
 .faq-container {
     width: 90%;
-    max-width: 600px;
+    max-width: 1200px;
     background: #1a1a40;
+    margin: auto;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
@@ -537,7 +520,7 @@ html{
 /* Responsive Design */
 @media (max-width: 480px) {
     .faq-container {
-        width: 100%;
+        width: 90%;
         padding: 20px;
     }
 
