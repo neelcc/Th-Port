@@ -243,6 +243,10 @@ html{
     color: white;
 }
 
+span.stat-number {
+    color: white;
+}
+
 .stat-number {
     font-size: 34px;
     color: white;
